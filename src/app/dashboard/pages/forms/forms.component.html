@@ -1,0 +1,19 @@
+<form [formGroup]="userForm">
+    <div class="row">
+        <div class="col-6">
+            <mat-form-field appearance="outline">
+            <mat-label>Nombre</mat-label>
+            <input formControlName="name" matInput>
+            <mat-error>
+                Campo invalido.
+            </mat-error>
+            </mat-form-field>
+        </div>
+        <div class="col-6">
+            <mat-form-field appearance="outline">
+            <mat-label>Apellido</mat-label>
+            <input formControlName="lastname" matInput>
+            </mat-form-field>
+        </div>
+    </div>
+</form>
